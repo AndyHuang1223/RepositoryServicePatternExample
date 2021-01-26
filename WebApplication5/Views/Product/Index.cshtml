@@ -14,10 +14,11 @@
     <div>
         @foreach (var product in Model)
         {
-            <h1>@product.Name</h1>
+            <h2>產品名稱：@product.Name</h2>
             @*<h1>@product.ImgUrl</h1>*@
-            <h1>@product.UnitPrice</h1>
+            <h2>產品單價：@product.UnitPrice</h2>
             @*<h1>@product.Stock</h1>*@
+            <hr>
         }
     </div>
 </body>

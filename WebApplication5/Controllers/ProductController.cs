@@ -17,11 +17,11 @@ namespace WebApplication5.Controllers
             _productService = new ProductService();
         }
         // GET: Product
-        public ActionResult Index(int unitPrice)
+        public ActionResult Index(int unitPrice = 0)
         {
-            //大於200元的商品
+            
+            //最低單價查詢條件
             var products = _productService.GetByFilter(unitPrice);
-            //var result =  products
             return View(products);
         }
     }
